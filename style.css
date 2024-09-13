@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.nav-bar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1rem;
+    background-color: aquamarine;
+}
+@media screen and (max-width: 50em) {
+    .nav-bar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
+
+.logo{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.items{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+@media screen and (max-width = 35em) {
+    .items{
+        justify-content: center;
+    }
+    
+}
+.navlink{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: color .5s;
+    font-family: "Roboto", sans-serif;
+}
+.navlink:hover{
+    color: red;
+}
+
+
+.hero{
+    height: 51.2rem;
+    /* border: 3px solid red; */
+}
+.hero{
+    background-image: url(images/one\ bedroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-details{
+    display: flex;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 27.5em;
+    padding-bottom: 6em;
+    height: 51.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.Hero-header{
+    font-size: 70px;
+}
+.learn-more{
+    color: black;
+    text-decoration: none;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+.learn-more a{
+    padding: 30px;
+}
+.hero-details a:hover{
+    background-color: aquamarine;
+    color: cornflowerblue;
+}
