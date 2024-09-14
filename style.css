@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: aquamarine;
+  --secondary-color: aqua;
+  --text-color: black;
+  --background-color: rgb(242, 235, 235);
+  --hover-color: red;
+  --tertialy-color: white;
+  --inline-color: #868383;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --background: rgba(0, 0, 0, 0.4);
+  --here-detais: cornflowerblue;
+  --overlay: rgb(174, 170, 170);
+  --overlay-backgoud:#1c1c1c;
+  --box:rgba(34, 33, 33, 0.9);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +26,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: rgb(242, 235, 235);
+  background-color: var(--background-color);
 }
 .nav-bar {
   position: fixed;
@@ -18,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-  background-color: aquamarine;
+  background-color: var(--primary-color);
   z-index: 45678;
 }
 @media screen and (max-width: 50em) {
@@ -46,22 +63,21 @@ body {
 .navlink {
   text-decoration: none;
   text-transform: capitalize;
-  color: black;
+  color: var(--text-color);
   font-weight: 700;
   font-size: 15px;
   transition: color 0.5s;
   font-family: "Roboto", sans-serif;
 }
 .navlink:hover {
-  color: red;
+  color: var(--hover-color);
 }
 
 .hero {
   height: 56.6rem;
-  /* border: 3px solid red; */
 }
 .hero {
-  background-image: url(images/one\ bedroom.jpg);
+  background-image: url(assets/one\ bedroom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -77,16 +93,16 @@ body {
   padding-top: 27.5em;
   padding-bottom: 6em;
   height: 56.6rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--tertialy-color);
+  background-color: var(--background);
 }
 .Hero-header {
   font-size: 70px;
 }
 .learn-more {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
-  background-color: aqua;
+  background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 30px;
   margin-top: 100px;
@@ -95,12 +111,12 @@ body {
   padding: 30px;
 }
 .hero-details a:hover {
-  background-color: aquamarine;
-  color: cornflowerblue;
+  background-color: var(--primary-color);
+  color: var(--here-detais);
 }
 
 .services {
-  border: 3px solid red;
+  border: 3px solid var(--hover-color);
   height: 50em;
 }
 .heading1 {
@@ -132,7 +148,7 @@ body {
 
 .room-card {
   width: 35rem;
-  background-color: aquamarine;
+  background-color: var(--primary-color);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -162,8 +178,8 @@ body {
 .room-action-cta {
   border: none;
   outline: none;
-  color: black;
-  background-color: aqua;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
   text-transform: capitalize;
   padding: 1rem;
   font-weight: 700;
@@ -179,9 +195,9 @@ body {
 
 .more-rooms {
   text-decoration: none;
-  background-color: aqua;
+  background-color: var(--secondary-color);
   padding: 1.5rem 2rem;
-  color: black;
+  color: var(--text-color);
   border-radius: 100px;
   text-transform: capitalize;
   display: block;
@@ -206,7 +222,7 @@ body {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: 5px 5px 15px rgba(34, 33, 33, 0.9);
+  box-shadow: 5px 5px 15px var(--box);
 }
 .box img {
   width: 100%;
@@ -217,7 +233,7 @@ body {
 .overlay {
   width: 100%;
   height: 0;
-  background: linear-gradient(transparent, #1c1c1c 58%);
+  background: linear-gradient(transparent, var(--overlay-backgoud) 58%);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -233,7 +249,7 @@ body {
   transition: height 0.5s;
 }
 .overlay h3 {
-  color: rgb(174, 170, 170);
+  color: var(--overlay);
   font-weight: 500;
   margin-bottom: 5px;
   margin-top: 80%;
@@ -249,7 +265,7 @@ body {
   height: 100%;
 }
 .para {
-  color: rgb(174, 170, 170);
+  color: var(--overlay);
   padding-bottom: 6em;
 }
 
@@ -271,23 +287,22 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--box-shadow);
 }
 
 .text-container {
   flex: 1;
   font-size: 16px;
-  color: #333;
-  background-color: white;
+  color: var(--inline-color);
+  background-color: var(--tertialy-color);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--box-shadow);
 }
 
 .footer {
-  background-color: aquamarine;
-  color: black;
-  padding: 20px 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,28 +338,33 @@ body {
   font-size: 14px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: none;
   font-size: 14px;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--tertialy-color);
+  color: var(--inline-color);
 }
 
 .footer-form button {
   padding: 10px 20px;
-  background-color: #555;
-  color: white;
+  background-color: var(--inline-color);
+  color: var(--tertialy-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .footer-form button:hover {
-  background-color: #777;
+  background-color: var(--tertialy-color);
+  color: var(--text-color);
+  transition: .5s;
+}
+.footer-contacts {
+  text-align: center;
+  padding-top: 13em;
 }
 
 .footer-contacts ul {
@@ -362,25 +382,33 @@ body {
 }
 
 .footer-contacts ul.social-links li a {
-  color: white;
+  color: var(--tertialy-color);
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #555;
+  background-color: var(--inline-color);
 }
 
 .footer-contacts ul.social-links li a:hover {
-  background-color: #777;
+  background-color: var(--tertialy-color);
+  color: var(--text-color);
+  transition: 0.5s;
 }
 
 .footer-bottom {
-  background-color: #dfd1d1;
+  background-color: var(--inline-color);
   width: 100%;
   text-align: center;
   padding: 10px 0;
 }
 
 .footer-bottom p {
-  margin: 0;
+  margin-bottom: 0%;
   font-size: 14px;
+  padding: 2rem 2rem;
+}
+.social-links {
+  align-items: center;
+  padding-left: 5px;
+  margin-left: 190px;
 }
