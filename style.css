@@ -14,6 +14,7 @@
   --overlay: rgb(174, 170, 170);
   --overlay-backgoud:#1c1c1c;
   --box:rgba(34, 33, 33, 0.9);
+  scroll-behavior: smooth;
 }
 
 * {
@@ -426,7 +427,7 @@ body {
 
 @media screen and(max-width: 47.06em) {
   .footer-container{
-    flex-direction: column;
+    flex-direction: column;git
   }
   
 }
