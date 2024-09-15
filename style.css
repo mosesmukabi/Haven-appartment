@@ -27,6 +27,7 @@ html {
 }
 body {
   background-color: var(--background-color);
+  width: 100%;
 }
 .nav-bar {
   position: fixed;
@@ -60,6 +61,7 @@ body {
     justify-content: center;
   }
 }
+
 .navlink {
   text-decoration: none;
   text-transform: capitalize;
@@ -68,6 +70,13 @@ body {
   font-size: 15px;
   transition: color 0.5s;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 30.43em) {
+  .item-link {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 .navlink:hover {
   color: var(--hover-color);
@@ -278,6 +287,7 @@ body {
   margin: auto;
 }
 
+
 .video-container {
   flex: 1;
   margin-right: 20px;
@@ -299,6 +309,24 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px var(--box-shadow);
 }
+
+@media screen and (max-width: 61.5em) {
+  .container{
+    flex-direction: column;
+  }
+
+  .video-container{
+    width: 97%;
+  }
+
+  .text-container{
+    width: 97%;
+    margin-top: 3rem;
+  }
+
+}
+
+
 
 .footer {
   background-color: var(--primary-color);
@@ -393,6 +421,14 @@ body {
   background-color: var(--tertialy-color);
   color: var(--text-color);
   transition: 0.5s;
+}
+
+
+@media screen and(max-width: 47.06em) {
+  .footer-container{
+    flex-direction: column;
+  }
+  
 }
 
 .footer-bottom {
