@@ -12,8 +12,8 @@
   --background: rgba(0, 0, 0, 0.4);
   --here-detais: cornflowerblue;
   --overlay: rgb(174, 170, 170);
-  --overlay-backgoud:#1c1c1c;
-  --box:rgba(34, 33, 33, 0.9);
+  --overlay-backgoud: #1c1c1c;
+  --box: rgba(34, 33, 33, 0.9);
   scroll-behavior: smooth;
 }
 
@@ -288,7 +288,6 @@ body {
   margin: auto;
 }
 
-
 .video-container {
   flex: 1;
   margin-right: 20px;
@@ -312,22 +311,19 @@ body {
 }
 
 @media screen and (max-width: 61.5em) {
-  .container{
+  .container {
     flex-direction: column;
   }
 
-  .video-container{
+  .video-container {
     width: 97%;
   }
 
-  .text-container{
+  .text-container {
     width: 97%;
     margin-top: 3rem;
   }
-
 }
-
-
 
 .footer {
   background-color: var(--primary-color);
@@ -367,7 +363,8 @@ body {
   font-size: 14px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -389,7 +386,7 @@ body {
 .footer-form button:hover {
   background-color: var(--tertialy-color);
   color: var(--text-color);
-  transition: .5s;
+  transition: 0.5s;
 }
 .footer-contacts {
   text-align: center;
@@ -424,12 +421,10 @@ body {
   transition: 0.5s;
 }
 
-
 @media screen and(max-width: 47.06em) {
-  .footer-container{
+  .footer-container {
     flex-direction: column;
   }
-  
 }
 
 .footer-bottom {
